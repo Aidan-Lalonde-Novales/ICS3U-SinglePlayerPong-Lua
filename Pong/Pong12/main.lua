@@ -1,4 +1,4 @@
--- This file contains Pong 11's code
+-- This file contains Pong 12's code
 
 WINDOW_WIDTH = 1280
 WINDOW_HEIGHT = 720
