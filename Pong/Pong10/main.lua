@@ -40,9 +40,9 @@ function love.load()
     ball = Ball(VIRTUAL_WIDTH / 2 - 2, VIRTUAL_HEIGHT / 2 - 2, 5, 5)
 
     if servingPlayer == 1 then
-        ball.dx = 100
-    else
         ball.dx = -100
+    else
+        ball.dx = 100
     end
     
     ballX = VIRTUAL_WIDTH / 2 - 2
