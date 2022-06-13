@@ -103,7 +103,7 @@ function love.update(dt)
             player2Score = player2Score + 1
             servingPlayer = 1
             ball:reset()
-            ball.dx = 100
+            ball.dx = -100
             gameState = 'serve'
         end
 
@@ -111,7 +111,7 @@ function love.update(dt)
             player1Score = player1Score + 1
             servingPlayer = 2
             ball:reset()
-            ball.dx = -100
+            ball.dx = 100
             gameState = 'serve'
         end
         ball:update(dt)

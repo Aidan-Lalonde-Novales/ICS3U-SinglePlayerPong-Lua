@@ -111,7 +111,7 @@ function love.update(dt)
                 gameState ='victory'
                 winningPlayer = 2
             else
-            ball.dx = 100
+            ball.dx = -100
             gameState = 'serve'
             end
         end
@@ -124,7 +124,7 @@ function love.update(dt)
                 gameState ='victory'
                 winningPlayer = 1
             else
-            ball.dx = -100
+            ball.dx = 100
             gameState = 'serve'
             end
         end
@@ -172,7 +172,7 @@ function love.draw()
         love.graphics.printf("Player Enter to Serve!", 0, 32, VIRTUAL_WIDTH, 'center') 
     elseif gameState == 'victory' then
         love.graphics.setFont(victoryFont)
-        love.graphics.printf("Player " .. tostring(winningPlayer) .. " wins", 0, 20, VIRTUAL_WIDTH, 'center')
+        love.graphics.printf("Player " .. tostring(winningPlayer) .. " wins!", 0, 15, VIRTUAL_WIDTH, 'center')
         love.graphics.setFont(smallFont)
         love.graphics.printf("Player Enter to Serve!", 0, 42, VIRTUAL_WIDTH, 'center')
     end
